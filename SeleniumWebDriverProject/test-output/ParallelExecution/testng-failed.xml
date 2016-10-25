@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ParallelExecution]" parallel="tests">
+  <parameter name="browser" value="CH"/>
+  <test name="WebDriverDemo with HTML unit(failed)" parallel="tests">
+    <parameter name="browser" value="HU"/>
+    <classes>
+      <class name="practice.Dummy1">
+        <methods>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- practice.Dummy1 -->
+    </classes>
+  </test> <!-- WebDriverDemo with HTML unit(failed) -->
+  <test name="WebDriverDemo Witn FF(failed)" parallel="tests">
+    <parameter name="browser" value="FF"/>
+    <classes>
+      <class name="practice.Dummy1">
+        <methods>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- practice.Dummy1 -->
+    </classes>
+  </test> <!-- WebDriverDemo Witn FF(failed) -->
+</suite> <!-- Failed suite [ParallelExecution] -->
